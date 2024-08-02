@@ -1,6 +1,11 @@
 #!/bin/bash
 
-#Version history:
+# What it does:
+# Install some packages needed for this + other stuff
+# Gets the drivers from a git repository and installs them
+# Enables the Wifi-adapter and gives it an ip
+
+# Version history:
 # 0.1 	- Base script using hardcoded dongle name + install dependencies
 # 0.2 	- If/else to see if dongle is up
 # 0.2.1	- Minor if/else edits for the wifi check
@@ -74,10 +79,3 @@ else
 	echo -e "\033[0;31mWifi-Dongle is not up, debug when script is done\033[0m"
 	sleep 3
 fi
-
-
-
-
-
-
-
