@@ -12,6 +12,7 @@
 # 0.2.2 - IP+mask on dongle using ifconfig
 # 0.2.3 - Multi-line commenting used for ignoring part of script for debugging
 # 0.2.4 - Added root-check as the script needs root privileges to run properly.
+# 0.2.5 - checking out a specific commit due to error in the latest commit
 
 # Todo:
 # Make change from ifconfig to ip command as ifconfig is deprecated(?)
@@ -51,11 +52,13 @@ sudo mkdir downloads
 cd downloads
 sudo git clone https://github.com/aircrack-ng/rtl8812au.git
 cd rtl8812au/
+sudo git checkout 63cf0b4
 sudo make
 cd ..
 cd ..
 
 sudo make -C ./downloads/rtl8812au/ install
+
 
 #DRIVER_INSTALLMENT_DELIMITER
 # Getting the USB wifi up and running!
